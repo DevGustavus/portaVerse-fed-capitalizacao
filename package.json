@@ -9,7 +9,13 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "serve:ssr:portaVerse-fed-capitalizacao": "node dist/portaVerse-fed-capitalizacao/server/server.mjs"
+    "serve:ssr:portaVerse-fed-capitalizacao": "node dist/portaVerse-fed-capitalizacao/server/server.mjs",
+    "lint": "ng lint",
+    "pretty-quick": "pretty-quick --staged",
+    "lint:fix": "ng lint --fix",
+    "format": "prettier --write .",
+    "format:staged": "pretty-quick --staged",
+    "prepare": "husky install"
   },
   "prettier": {
     "overrides": [
@@ -43,8 +49,16 @@
     "@types/express": "^5.0.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^20.17.19",
+    "angular-eslint": "20.1.1",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
     "jest": "^30.0.5",
     "jest-preset-angular": "^15.0.0",
-    "typescript": "~5.8.2"
+    "prettier": "^3.6.2",
+    "pretty-quick": "^4.2.2",
+    "typescript": "~5.8.2",
+    "typescript-eslint": "8.34.1",
+    "husky": "^8.0.0"
   }
 }
